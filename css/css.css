@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-body: #010C15;
+    --text-color: #607B96;
+    --border-color: #1E2D3D;
+    --bg-container: #011627;
+    --p-dev-color: #43D9AD;
+    --presentation: #E5E9F0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+    background: var(--bg-container);
+    color: var(--text-color);
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    
+    position: relative;
+}
+
+.container {
+    background: var(--bg-container);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 10px 18px;
+    height: 56px;
+    border: 1px solid var(--border-color);
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    width: 100%;
+}
+
+header .myheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-size: 18px;
+}
+
+header ion-icon {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.menu ul {
+    list-style: none;
+    position: absolute;
+    left: -100%;
+    top: 56px;
+    width: 100%;
+    height: 80vh;
+    background: var(--bg-container);
+    transition: all 1s ease-in-out;
+}
+
+.menu ul li {
+    padding: 17px;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+}
+
+.container .bg-colors {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container .bg-colors #green {
+    position: absolute;
+    transform: rotate(-94.305deg);
+    opacity: 1;
+    filter: blur(87px);
+    top: 147px;
+    left: 15px;
+    z-index: -1;
+}
+
+.container .bg-colors #blue {
+    position: absolute;
+    transform: rotate(-94.305deg);
+    opacity: 1;
+    filter: blur(87px);
+    top: 155px;
+    right: 155px;
+    z-index: -2;
+}
+.content-presentation{
+    display: flex;
+    justify-content: center;
+}
+
+.container .presentation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 96px;
+    gap: 5px;
+}
+
+.container .presentation p.hi{
+    font-size: 18px;
+    color: var(--presentation);
+}
+
+.container .presentation p.dev{
+    font-size: 20px;
+    color: var(--p-dev-color);
+}
+
+.container .presentation h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--presentation);
+}
+
+.container .github {
+    margin-top: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+
+.container .github .githublink {
+    text-align: center;
+    cursor: default;
+    padding: 0px 25px;
+}
+
+
+.container .github .githublink .const {
+    color: #4D5BCE;
+}
+
+.container .github .githublink .var {
+    color: #43D9AD;
+}
+
+.container .github .githublink .value {
+    color: #E99287;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+.container .github .githublink .value:hover{
+    text-align: center;
+    filter: drop-shadow(0px -0px 10px);
+    transform: scale(1.5);
+}
+
+footer {
+    border: 1px solid  var(--border-color);
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .find-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .find-me span p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid var(--border-color);
+    border-radius: 5px 0px 0px 5px;
+}
+
+footer .find-me p {
+    padding: 15px 18px;
+}
