@@ -52,12 +52,13 @@ body {
 .content-presentation{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .container .presentation {
     display: flex;
     flex-direction: column;
-    margin-top: 96px;
     gap: 5px;
 }
 
@@ -148,4 +149,22 @@ body {
 
 .contact a:hover {
     color: #5b9ddf;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-presentation{
+        display: flex;
+        align-items: center;
+    }
+
+    .container .github {
+        display: none;
+    }
+    
 }
