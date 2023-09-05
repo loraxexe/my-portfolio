@@ -3,6 +3,16 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .aviso {
@@ -16,13 +26,35 @@
 }
 
 body {
+    padding-bottom: 100px;
     background: var(--background);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: 'Fira Code', monospace;
-    color: var(--text-color)
+    color: var(--text-color);
+    position: relative;
+}
+
+.square-right {
+    width: 60px;
+    height: 80px;
+    border: 1px solid var(--text-color);
+    border-right: none;
+    position: absolute; 
+    right: 0;
+    top: 400px;
+}
+
+.square-right-2 {
+    width: 60px;
+    height: 120px;
+    border: 1px solid var(--text-color);
+    border-right: none;
+    position: absolute; 
+    right: 0;
+    top: 700px;
 }
 
 .container {
@@ -35,6 +67,11 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 32px 0 8px 0;
+    position: fixed;
+    width: 75vw;
+    z-index: 999;
+    background: var(--background);
+    box-shadow: 0px 1px rgba(104, 104, 104, 0.118);
 }
 
 header .name {
@@ -49,23 +86,23 @@ header .name {
 
 header ul {
     display: flex;
-    gap: 32px;
+    gap: 30px;
 }
 
 header ul li {
     list-style: none;
-    cursor: pointer;
-    transition: color 500ms;
-    font-weight: 500;
 }
 
-header ul li:hover {
+header ul a:hover {
     color: white;
 }
 
 header ul a {
     color: var(--text-color);
     text-decoration: none;
+    cursor: pointer;
+    transition: color 500ms;
+    font-weight: 500;
 }
 
 .primary {
@@ -190,6 +227,147 @@ header ul a {
 }
 
 /* FIM PRESENTATION */
+
+
+
+/* INICIO DO QUOTE */
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote .q-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 74px;
+    margin-top: 70px;
+
+}
+
+.quote .q-center p.frase {
+    color: white;
+    font-weight: 500;
+}
+
+.quote .q-center .frase {
+    padding: 25px;
+    position: relative;
+    border: 1px solid var(--text-color);
+}
+
+.quote .q-center .author {
+    padding: 16px;
+    border: 1px solid var(--text-color);
+    border-top: none;
+    color: white;
+}
+
+.aspas-1 {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    background: var(--background);
+}
+
+.aspas-2 {
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    background: var(--background);
+}
+
+/* FIM DO QUOTE */
+
+/* INICIO DO PROJECTS */
+
+.projects-frame {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.project-title h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.project-title hr {
+    height: 1px;
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+}
+
+
+/* FIM DO PROJECTS */
+
+.frame-one {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid var(--text-color);
+    width: auto;
+    margin-top: 40px;
+}
+
+.frame-one img {
+    height: 140px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.frame-one .tech {
+    border-bottom: 1px solid var(--text-color);
+    padding: 8px;
+}
+
+.frame-one .box {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.frame-one .box h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.frame-one .linkhub {
+    display: flex;
+    gap: 16px;
+}
+
+.frame-one .linkhub button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 8px;
+    cursor: pointer;
+    transition: border 500ms, color 500ms;
+}
+
+.frame-one .linkhub button:hover {
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+
+.frame-one .linkhub button ion-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
 
 @media (max-width: 950px) {
 

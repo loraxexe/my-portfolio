@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/scroll.css">
 </head>
 <body id="open-menu">
   <div class="aviso">
@@ -21,6 +22,8 @@
     <a href="https://instagram.com/dgls.exe" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
     <a href="https://twitter.com/lorax_exe" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
   </div>
+  <span class="square-right"></span>
+  <span class="square-right-2"></span>
   <main class="container" id="container">
     <header>
       <div class="name">
@@ -28,13 +31,14 @@
         <p>Douglas</p>
       </div>
       <ul>
-        <a href=""><li><span class="primary">#</span>home</li></a>
-        <a href=""><li><span class="primary">#</span>projetos</li></a>
-        <a href=""><li><span class="primary">#</span>sobre mim</li></a>
-        <a href=""><li><span class="primary">#</span>contato</li></a>
+        <a href=""><li><span class="primary">#</span><a href="#presentation">home</a></li></a>
+        <a href=""><li><span class="primary">#</span><a href="#projects">projetos</a></li></a>
+        <a href=""><li><span class="primary">#</span><a href="#skills">skills</a></li></a>
+        <a href=""><li><span class="primary">#</span><a href="#bout-me">sobre mim</a></li></a>
+        <a href=""><li><span class="primary">#</span><a href="#contact">contato</a></li></a>
       </ul>
     </header>
-    <section class="presentation">
+    <section class="presentation" id="presentation">
       <div class="p-left">
         <h1>
           Olá, me chamo <span class="primary">Douglas</span> <br> <span class="primary">></span>  
@@ -46,16 +50,64 @@
         </button>
       </div>
       <div class="p-right">
-        <img src="image/profile.png" width="400" height="340">
-        <img class="dots" src="image/Dots.png" alt="">
-        <img class="square" src="image/logo-presentation.png" alt="">
+        <img src="image/profile.png" alt="profile image" width="400" height="340">
+        <img class="dots" src="image/Dots.png" alt="square points">
+        <img class="square" src="image/logo-presentation.png" alt="squares">
         <div class="dcpt-right">
           <span></span>
           <p>Atualmente trabalhando neste <span>Portfólio</span></p>
         </div>
       </div>
     </section>
+    <section class="quote">
+      <div class="q-center">
+        <p class="frase">
+          <span class="aspas-1"><img src="image/aspas.png" alt="aspas"></span>
+          A imaginação é mais importante que o conhecimento
+          <span class="aspas-2"><img src="image/aspas.png" alt="aspas"></span>
+        </p>
+        <p class="author">- Albert Einstein</p>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="project-title">
+        <h2><span class="primary">#</span>Projetos</h2>
+        <hr>
+      </div>
+      <div class="projects-frame">
+        <div class="frame-one">
+          <img src="image/devlinks.png" alt="image devlinks project">
+          <div class="description">
+            <p class="tech">HTML, CSS, JAVASCRIPT</p>
+            <div class="box">
+              <h3>DevLinks</h3>
+              <p>Repositório de links</p>
+              <div class="linkhub">
+                 <a href="https://devlinks-loraxexe.vercel.app" target="_blank"><button>Visitar <ion-icon name="enter-outline"></ion-icon></button></a>
+                 <a href="https://github.com/loraxexe/DevLinks" target="_blank"><button>Código <ion-icon name="code-slash-outline"></ion-icon></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-one">
+          <img src="image/movies.png" alt="image devlinks project">
+          <div class="description">
+            <p class="tech">HTML, CSS</p>
+            <div class="box">
+              <h3>Movies Ai</h3>
+              <p>Recomendação de filmes</p>
+              <div class="linkhub">
+                 <a href="https://movies-ai-loraxexe.vercel.app" target="_blank"><button>Visitar <ion-icon name="enter-outline"></ion-icon></button></a>
+                 <a href="https://github.com/loraxexe/movies-ai" target="_blank"><button>Código <ion-icon name="code-slash-outline"></ion-icon></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main> 
+  
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="script/script.js"></script>
