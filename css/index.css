@@ -3,226 +3,230 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+}
+
+.aviso {
+    display: none;
 }
 
 :root {
-    --bg-body: #010C15;
-    --text-color: #607B96;
-    --border-color: #1E2D3D;
-    --p-dev-color: #43D9AD;
-    --presentation: #E5E9F0;
-    --hover-menu: #5b9ddf;
-    --bg-container: linear-gradient(191deg, rgba(0, 0, 0, 0.692) 0%, rgb(1, 12, 21) 83%);
-}
-
-html, body {
-    height: 100vh;
-    width: 100%;
-    scroll-behavior: smooth;
+    --background: #282C33;
+    --text-color: #ABB2BF;
+    --primary: #C778DD;
 }
 
 body {
+    background: var(--background);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: 'Fira Code', monospace;
-    background: var(--bg-body);
-    color: var(--text-color);
-    width: 100%;
-    height: 100vh;
-    position: relative;
-
+    color: var(--text-color)
 }
 
 .container {
-    background: var(--bg-container);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 75VW;
 }
 
-.container .bg-colors {
-    width: 100%;
+/* INICIO DA HEADER */
+
+header {
     display: flex;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
+    padding: 32px 0 8px 0;
 }
 
-#content-presentation{
+header .name {
     display: flex;
-    justify-content: center;
+    gap: 8px;
     align-items: center;
-    height: 100%;
-    padding-top: 60px;
     cursor: default;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
 }
 
-.container #presentation {
+header ul {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 32px;
 }
 
-.container #presentation p.hi{
-    font-size: 18px;
-    color: var(--presentation);
+header ul li {
+    list-style: none;
+    cursor: pointer;
+    transition: color 500ms;
+    font-weight: 500;
 }
 
-.container #presentation p.dev{
-    font-size: 20px;
-    color: var(--p-dev-color);
+header ul li:hover {
+    color: white;
 }
 
-.container #presentation h1 {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 100%;
-    color: var(--presentation);
-}
-
-.container .github {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    gap: 15px;
-    text-align: center;
-}
-
-
-.container .github .githublink {
-    text-align: center;
-    cursor: default;
-    padding: 0px 25px;
-}
-
-
-.container .github .githublink .const {
-    color: #4D5BCE;
-}
-
-.container .github .githublink .var {
-    color: #43D9AD;
-}
-
-.container .github .githublink .value {
-    color: #E99287;
+header ul a {
+    color: var(--text-color);
     text-decoration: none;
-    transition: all 800ms;
 }
 
-.container .github .githublink .value:hover{
+.primary {
+    color: var(--primary);
+}
+
+.media {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    filter: drop-shadow(0px -0px 10px);
+    gap: 8px;
 }
 
-.github-responsive {
-    display: none;
+.media hr {
+    height: 120px;
+    border: none;
+    border-left: 1px solid var(--text-color);
 }
 
-.cards {
-    display: none;
+.media ion-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 500ms, color 500ms;
 }
 
-.container {
-    padding-bottom: 70px;
+.media ion-icon:hover {
+    color: var(--primary);
+    transform: scale(1.1);
 }
 
-li a {
+/* FIM DA HEADER */
+
+/* INICIO PRESENTATION */
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    align-items: center;
+}
+
+
+
+.p-left h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    cursor: default;
+}
+
+.p-left p {
+    margin-bottom: 24px;
+    cursor: default;
+}
+
+.p-left button {
+    background: transparent;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid var(--primary);
     color: var(--text-color);
+    cursor: pointer;
+    transition: all 500ms;
 }
 
-li a:hover {
-    color: var(--hover-menu);
+.p-left button:hover {
+    color: var(--primary);
 }
 
-@media screen and (min-width: 1035px) {
-    .container {
-        padding: 0 50px;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+.p-right {
+    position: relative;
+    align-items: center;
+}
 
-    .container .github {
-        display: none;
-    }
+.p-right .dots {
+    position: absolute; 
+    bottom: 55px;
+    right: 16px;
+    width: 70px;
+}
 
-    .container .github-responsive {
+.p-right .square {
+    position: absolute;
+    left: 0;
+    padding-right: 40px;
+    top: 84px;
+    z-index: -1;
+}
+
+.p-right .dcpt-right {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    padding: 5px;
+    justify-content: center;
+}
+
+.p-right .dcpt-right span {
+    width: 15px;
+    height: 15px;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+.p-right .dcpt-right p {
+    font-size: 15px;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.p-right .dcpt-right p span {
+    background: transparent;
+    color: white;
+    font-weight: 500;
+}
+
+/* FIM PRESENTATION */
+
+@media (max-width: 950px) {
+
+    .aviso {
+        height: 100vh;
         display: flex;
-        flex-direction: column;
-        height: 100%;
-        gap: 15px;
-        padding-top: 50px;
-        cursor: default;
-    }
-    .container .github-responsive .githublink {
-        cursor: default;
-    }
-    
-    
-    .container .github-responsive .githublink .const {
-        color: #4D5BCE;
-    }
-    
-    .container .github-responsive .githublink .var {
-        color: #43D9AD;
-    }
-    
-    .container .github-responsive .githublink .value {
-        color: #E99287;
-        text-decoration: none;
-        transition: all 800ms;
-    }
-    
-    .container .github-responsive .githublink .value:hover{
-        text-align: center;
-        filter: drop-shadow(0px -0px 10px);
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
     }
 
-    pre {
-        width: 350px;
-        font-family: 'Fira Code', monospace;
-        background-color: #010c156d;
-        font-size: 14px;
-        padding: 20px 30px;
-        border-radius: 10px;
-        letter-spacing: 0.2px;
-        border: 1px solid var(--border-color);
-        cursor: default;
+    .aviso ion-icon {
+        font-size: 100px;
+        color: var(--primary);
+        animation: chave 4s infinite;
     }
 
-    .card-key {
-        color: #00ffb3;
+    .aviso p {
+        text-align: center;
     }
 
-    .card-tags {
-        color: #6a67f4;
+    @keyframes chave {
+        0% {
+          transform: rotate(90deg)
+        }
+        50% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(90deg)
+        }
+      }
+    .container {
+        display: none;
     }
 
-    .card-cont {
-        color: #f68282;
-    }
-    
-    
-    h1 {
-        padding-right: 80px;
-    }
-
-    h1 br {
+    .media {
         display: none;
     }
 }
-

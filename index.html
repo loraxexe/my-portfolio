@@ -6,78 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Portfólio</title>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/fixeds.css">
 </head>
-
 <body id="open-menu">
-  <header>
-    <div class="myheader">
-      <button id="button-menu">
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-      <p>@lorax.exe</p>
-    </div>
-    <div class="menu">
-      <ul id="menu" class="menu-items">
-        <li class="items"><a href="#">_sobre-mim</a></li>
-        <li class="items"><a href="#">_projetos</a></li>
-        <li class="items"><a href="#">_contato</a></li>
+  <div class="aviso">
+    <ion-icon name="build"></ion-icon>
+    <p>
+      Esta página ainda está indisponível para tablets e celulares. <br>
+      Apenas dispositivos com telas maiores de 950 pixels são compativeis.
+    </p>
+  </div>
+  <div class="media">
+    <hr>
+    <ion-icon name="logo-github"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+  </div>
+  <main class="container" id="container">
+    <header>
+      <div class="name">
+        <img src="image/logo-header.png" alt="">
+        <p>Douglas</p>
+      </div>
+      <ul>
+        <a href=""><li><span class="primary">#</span>home</li></a>
+        <a href=""><li><span class="primary">#</span>projetos</li></a>
+        <a href=""><li><span class="primary">#</span>sobre mim</li></a>
+        <a href=""><li><span class="primary">#</span>contato</li></a>
       </ul>
-    </div>
-  </header>
-  <div class="container">
-    <div id="content-presentation">
-      <div id="presentation">
-        <p class="hi">Olá. Eu Sou </p>
-        <h1>Douglas <br>Cabral</h1>
-        <p class="dev">&gt; Front-end Developer</p>
-        <div class="github-responsive">
-          <p>// veja meu perfil no GitHub:</p>
-          <div class="githublink">
-            <span class="const">const</span>
-            <span class="var">githubLink</span> =
-            <a href="https://github.com/loraxexe"><span class="value">“github.com/loraxexe”</span></a>
-          </div>
+    </header>
+    <section class="presentation">
+      <div class="p-left">
+        <h1>
+          Olá, me chamo <span class="primary">Douglas</span> <br> <span class="primary">></span>  
+          <span class="primary">desenvolvedor front-end</span>
+        </h1>
+        <p>Crio websites responsivos onde a tecnologia <br> encontra a criatividade</p>
+        <button>
+          Me Contate
+        </button>
+      </div>
+      <div class="p-right">
+        <img src="image/profile.png" width="400" height="340">
+        <img class="dots" src="image/Dots.png" alt="">
+        <img class="square" src="image/logo-presentation.png" alt="">
+        <div class="dcpt-right">
+          <span></span>
+          <p>Atualmente trabalhando neste <span>Portfólio</span></p>
         </div>
       </div>
-    </div>
-    <div class="github">
-      <p>// veja meu perfil no GitHub:</p>
-      <div class="githublink">
-        <span class="const">const</span>
-        <span class="var">githubLink</span> =
-        <a href="https://github.com/loraxexe"><span class="value">“github.com/loraxexe”</span></a>
-      </div>
-    </div>
-    <div class="cards">
-      <div id="card-one"></div>
-      <div id="card-two"></div>
-      <div id="card-three"></div>
-    </div>
-  </div>
-  </div>
-  <footer>
-    <p class="findme">me encontre:</p>
-    <a href="#content-presentation">
-      <button>
-        <ion-icon name="chevron-up-circle-outline"></ion-icon>
-      </button>
-    </a>
-    <div class="socials">
-      <a href="https://instagram.com/dgls.exe" target="_blank">
-        <p><ion-icon name="logo-instagram" id></ion-icon></p>
-      </a>
-      <a href="https://github.com/loraxexe" target="_blank">
-        <p><ion-icon name="logo-github" id></ion-icon></p>
-      </a>
-      <a href="https://wa.me/5522997477083" target="_blank">
-        <p><ion-icon name="logo-whatsapp" id></ion-icon></p>
-      </a>
-    </div>
-  </footer>
+    </section>
+  </main> 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="script/script.js"></script>
 </body>
-
 </html>
