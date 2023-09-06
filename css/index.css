@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    cursor: default;
+    cursor: default;    
 }
 
 html {
@@ -66,7 +66,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 32px 0 8px 0;
+    padding: 16px 0 16px 0;
     position: fixed;
     width: 75vw;
     z-index: 999;
@@ -287,6 +287,8 @@ header ul a {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    margin-bottom: 70px;
+    justify-content: center;
 }
 
 .project-title {
@@ -307,8 +309,10 @@ header ul a {
     border-bottom: 2px solid var(--primary);
 }
 
-
 /* FIM DO PROJECTS */
+
+
+/* COMEÇO DOS FRAMES */
 
 .frame-one {
     display: inline-flex;
@@ -319,7 +323,7 @@ header ul a {
 }
 
 .frame-one img {
-    height: 140px;
+    height: 120px;
     border-bottom: 1px solid var(--text-color);
 }
 
@@ -363,11 +367,169 @@ header ul a {
     color: white;
 }
 
-
 .frame-one .linkhub button ion-icon {
     font-size: 22px;
     cursor: pointer;
 }
+/* FIM DOS FRAMES */
+
+/* INICIO DAS SKILLS */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .lft-rght {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    height: 310px;
+}
+
+.skills-left img.dots-1 {
+    width: 90px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.skills-left img.dots-2 {
+    width: 70px;
+    position: absolute;
+    top: 170px;
+    left: 270px;
+}
+
+.skills-left .square-top {
+    padding: 40px;
+    border: 1px solid var(--text-color);
+    position: absolute;
+    left: 250px;
+}
+
+.skills-left .square-bottom {
+    padding: 30px;
+    border: 1px solid var(--text-color);
+    position: absolute; 
+    top: 200px;
+    left: 400px;
+}
+
+.skills-left .square-pink {
+    position: absolute; 
+    top: 150px;
+    left: 40px;
+}
+
+.skills-right .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 430px;
+    justify-content: center;
+}
+
+.skills-right .cards .card {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid var(--text-color);
+    width: 200px;
+}
+
+.skills-right .cards .card .l1 {
+    border-bottom: 1px solid var(--text-color);
+    padding: 8px;
+    font-weight: 500;
+    color: white;
+}
+
+.skills-right .cards .card .l2{
+    padding: 8px;
+}
+
+/* FIM DAS SKILLS */
+
+/* INICIO DO ABOUT-ME */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me .about-text {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 30px;
+    margin-top: 50px
+}
+
+.about-me .about-text {
+    text-align: left;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.about-me .abt-fct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100%;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+}
+
+.facts p {
+    border: 1px solid var(--text-color);
+    padding: 10px;
+}
+
+.about-me .facts span {
+    color: white;
+
+}
+
+.facts .facts-imgs .dots-1 {
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    width: 70px;
+}
+
+.facts .facts-imgs .dots-2 {
+    width: 70px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.facts .facts-imgs .square-pink {
+    position: absolute;
+    top: 145px;
+    right: -40px;
+    width: 100px;
+}
+
+.facts .facts-imgs .square-pink2 {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 100px;
+}
+
+/* FIM DO ABOUT-ME */
 
 @media (max-width: 950px) {
 
