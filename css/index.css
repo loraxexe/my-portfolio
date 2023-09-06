@@ -639,6 +639,13 @@ footer {
 .div-2 span a ion-icon {
     font-size: 25px;
     color: white;
+    cursor: pointer;
+    transition: color 500ms, transform 500ms;
+}
+
+.div-2 span a ion-icon:hover {
+    color: var(--primary);
+    transform: scale(1.1);
 }
 
 .copy {
