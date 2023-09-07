@@ -1,0 +1,299 @@
+:root {
+    --background: #282C33;
+    --text-color: #ABB2BF;
+    --primary: #C778DD;
+}
+
+@media (max-width: 1050px) {
+
+    .container {
+        width: 80vw;
+    }
+
+    header ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-left img.dots-1 {
+        width: 90px;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+    }
+    
+    .skills-left img.dots-2 {
+        display: none;
+    }
+    
+    .skills-left .square-top {
+        padding: 35px;
+        border: 1px solid var(--text-color);
+        position: absolute;
+        left: 170px;
+    }
+    
+    .skills-left .square-bottom {
+        padding: 30px;
+        border: 1px solid var(--text-color);
+        position: absolute; 
+        top: 200px;
+        left: 280px;
+    }
+    
+    .skills-left .square-pink {
+        position: absolute; 
+        top: 150px;
+        left: 40px;
+    }
+
+    .img-about img {
+        width: 320px;
+    }
+    
+    .contact .contact-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact .contact-text p {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+    
+    .contact .mail {
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+        height: 100%;
+        padding-left: 15px;
+    }
+    
+    .contact .mail span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contact .mail span ion-icon{
+        font-size: 30px;
+    }
+    .contact .mail .here-contact {
+        font-weight: 500;
+        color: white;
+    }
+    
+    .contact .mail span p {
+        font-size: 18px;
+    }
+
+    footer {
+        margin-top: 50px
+        ;
+    }
+
+}
+
+@media (max-width: 910px) {
+    
+    .about-me .abt-fct {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .img-about img {
+        width: 250px;
+    }
+
+    .about-me .about-text {
+        margin-top: 20px;
+    }
+
+    .project-title hr {
+        height: 1px;
+        width: 400px;
+        border: none;
+        border-bottom: 2px solid var(--primary);
+    }
+    
+}
+
+@media (max-width: 850px) {
+
+    .project-title hr {
+        width: 300px;
+    }
+
+    .contact .contact-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contact .contact-text p {
+        padding-right: 0;
+    }
+
+    .skills .lft-rght {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .skills-left {
+        display: none;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: relative fixed;
+        margin: 0 25px;
+    }
+
+    header .name {
+        padding-left: 25px;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: -67px;
+        height: 100vh;
+        width: 100vw;
+        background: #191c24;
+        right: -100%;
+        gap: 0;
+        transition: right 1s;
+    }
+
+    .visible {
+        right: 0;
+    }
+
+    header ul li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 25px;
+        font-size: 25px;
+    }
+
+    header ion-icon {
+        display: block;
+        padding-right: 25px;
+        font-size: 35px;
+    }
+
+    footer {
+        padding-top: 35px;
+        gap: 25px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .div-2 .midia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+@media (max-width: 660px) {
+    
+    .container {
+        width: 80vw;
+    }
+
+    header ul li {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .skills-right .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-title hr {
+        width: 200px;
+    }
+
+    .project-title h2 {
+        font-size: 20px;
+    }
+
+    .quote .q-center .frase {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .quote .q-center .author {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .skills-right .cards .card {
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .skills-right .cards .card {
+        width: 200px;
+    }
+
+    .img-about {
+        display: none;
+    }
+
+    .p-right .dcpt-right {
+        display: flex;
+    }
+    
+    .media {
+        display: none;
+    }
+}

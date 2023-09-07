@@ -24,7 +24,4 @@ let isVisibleMenu = false;
       item.addEventListener('click', closeMenu);
     });
 
-
-    const code = document.getElementById('card-one')
-
 /**/ 
