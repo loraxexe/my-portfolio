@@ -104,17 +104,16 @@
     
     .about-me .abt-fct {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
+    
     }
 
     .img-about img {
-        width: 250px;
+        display: none;
     }
 
     .about-me .about-text {
-        margin-top: 20px;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .project-title hr {
@@ -148,6 +147,7 @@
         justify-content: center;
         align-items: center;
         margin: 0;
+        margin-bottom: 20px;
     }
 
     .skills-left {
@@ -201,9 +201,18 @@
         font-size: 35px;
     }
 
+    .quote .q-center .frase {
+       width: clamp(320px, 3.4rem, 1440px);
+       position: relative;
+    }
+
     footer {
         padding-top: 35px;
         gap: 25px;
+    }
+
+    .div-1 .p-1 span.email {
+        display: none;
     }
 
     .footer {
@@ -255,11 +264,6 @@
         font-size: 20px;
     }
 
-    .quote .q-center .frase {
-        padding: 15px;
-        font-size: 14px;
-    }
-
     .quote .q-center .author {
         padding: 10px;
         font-size: 14px;
@@ -278,11 +282,19 @@
     }
 
     .container {
-        width: 100vw;
+        width: 90vw;
+    }
+
+    .skills-right .cards {
+        width: 100%;
     }
 
     .skills-right .cards .card {
         width: 200px;
+    }
+
+    .facts {
+        width: 100%;
     }
 
     .img-about {
@@ -296,4 +308,15 @@
     .media {
         display: none;
     }
+}
+
+@media (max-width: 430px) {
+
+    .p-right .dcpt-right span {
+        display: none;
+    }
+
+    .quote .q-center .frase {
+        padding: 15px;
+     }
 }
