@@ -174,7 +174,7 @@
         flex-direction: column;
         align-items: center;
         position: fixed;
-        bottom: -67px;
+        bottom: 0px;
         height: 100vh;
         width: 100vw;
         background: #282c33d2;
@@ -195,6 +195,10 @@
         width: 100%;
         padding: 25px;
         font-size: 25px;
+    }
+
+    header ul li.topo {
+        padding-top: 80px;
     }
 
     header ion-icon {
