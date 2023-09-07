@@ -177,10 +177,12 @@
         bottom: -67px;
         height: 100vh;
         width: 100vw;
-        background: #191c24;
+        background: #282c33d2;
         right: -100%;
         gap: 0;
-        transition: right 1s;
+        transition: right 800ms;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
 
     .visible {
@@ -243,11 +245,6 @@
     
     .container {
         width: 80vw;
-    }
-
-    header ul li {
-        padding: 20px;
-        font-size: 20px;
     }
 
     .skills-right .cards {
