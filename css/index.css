@@ -187,6 +187,7 @@ header ion-icon {
 .p-right .dcpt-right {
     display: flex;
     align-items: center;
+    text-align: center;
     border: 1px solid var(--text-color);
     border-radius:  5px;
     padding: 5px;
@@ -236,6 +237,7 @@ header ion-icon {
 .quote .q-center p.frase {
     color: white;
     font-weight: 500;
+    text-align: center;
 }
 
 .quote .q-center .frase {

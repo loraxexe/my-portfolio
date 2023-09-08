@@ -57,7 +57,7 @@
           <span class="primary">desenvolvedor front-end</span>
         </h1>
         <p>Crio websites responsivos onde a tecnologia <br> encontra a criatividade</p>
-        <button>
+        <button id="open-contact">
           Me Contate
         </button>
       </div>
@@ -66,12 +66,25 @@
         <img class="dots" src="image/Dots.png" alt="square points">
         <img class="square" src="image/logo-presentation.png" alt="squares">
         <div class="dcpt-right">
-          <span></span>
+          <span class="span"></span>
           <p>Atualmente trabalhando neste <span>Portfólio</span></p>
         </div>
       </div>
     </section>
     <section class="quote">
+      <form class="contact-popup" id="contact-popup">
+        <button id="close-contact">X</button>
+        <h3>Entre em Contato</h3>
+        <div class="info">
+          <input type="text" placeholder="Nome" id="name">
+          <input type="email" placeholder="Email" id="email">
+        </div>
+        <div class="message">
+          <input type="text" placeholder="Título" id="title">
+          <textarea placeholder="Mensagem" name="Mensagem" id="message" cols="30" rows="5"></textarea>
+          <input type="submit" name="enviar" id="submit">
+        </div>
+      </form>
       <div class="q-center">
         <p class="frase">
           <span class="aspas-1"><img src="image/aspas.png" alt="aspas"></span>
@@ -124,7 +137,7 @@
           <div class="description">
             <p class="tech">HTML, CSS, JAVASCRIPT</p>
             <div class="box">
-              <h3>DevLinks</h3>
+              <h3>Portfólio</h3>
               <p>Meu portfólio</p>
               <div class="linkhub">
                 <a href="https://my-portfolio-loraxexe.vercel.app" target="_blank"><button>Visitar <ion-icon

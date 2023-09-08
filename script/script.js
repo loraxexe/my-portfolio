@@ -24,4 +24,17 @@ let isVisibleMenu = false;
       item.addEventListener('click', closeMenu);
     });
 
-/**/ 
+/* POP-UP*/ 
+
+const openContactButton = document.getElementById('pen-contact');
+const contactPopup = document.getElementById('contact-popup');
+const closeContactButton = document.getElementById('close-contact');
+
+openContactButton.addEventListener('click', () => {
+    contactPopup.style.display = 'block';
+});
+
+closeContactButton.addEventListener('click', () => {
+    contactPopup.style.display = 'none';
+});
+
