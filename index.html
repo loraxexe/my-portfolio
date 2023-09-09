@@ -57,12 +57,14 @@
           <span class="primary">desenvolvedor front-end</span>
         </h1>
         <p>Crio websites responsivos onde a tecnologia <br> encontra a criatividade</p>
-        <button id="open-contact">
-          Me Contate
-        </button>
+        <a href="#contact">
+          <button id="open-contact">
+            Me Contate
+          </button>
+        </a>
       </div>
       <div class="p-right">
-        <img src="image/profile.png" alt="profile image" width="340" height="280">
+        <img class="profileimage" src="image/profile.png" alt="profile image" width="340" height="280">
         <img class="dots" src="image/Dots.png" alt="square points">
         <img class="square" src="image/logo-presentation.png" alt="squares">
         <div class="dcpt-right">
@@ -72,19 +74,6 @@
       </div>
     </section>
     <section class="quote">
-      <form class="contact-popup" id="contact-popup">
-        <button id="close-contact">X</button>
-        <h3>Entre em Contato</h3>
-        <div class="info">
-          <input type="text" placeholder="Nome" id="name">
-          <input type="email" placeholder="Email" id="email">
-        </div>
-        <div class="message">
-          <input type="text" placeholder="Título" id="title">
-          <textarea placeholder="Mensagem" name="Mensagem" id="message" cols="30" rows="5"></textarea>
-          <input type="submit" name="enviar" id="submit">
-        </div>
-      </form>
       <div class="q-center">
         <p class="frase">
           <span class="aspas-1"><img src="image/aspas.png" alt="aspas"></span>
@@ -224,54 +213,41 @@
         <p>Estou interessado em oportunidades freelance. No entanto, <br>
           se você tiver outra solicitação ou dúvida, não hesite <br>
           em entrar em contato comigo</p>
-        <div class="mail">
-          <p class="here-contact">entre em contato</p>
-          <span>
-            <ion-icon name="mail"></ion-icon>
-            <p>douglax2005@gmail.com</p>
-          </span>
-          <span>
-            <ion-icon name="logo-discord"></ion-icon>
-            <p>lorax.exe</p>
-            <p></p>
-          </span>
-        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="footer">
-
-      <div class="div-1">
-        <div class="p-1">
-          <span>
-            <img src="image/logo-header.png">
-            <p class="name">Douglas</p>
-          </span>
-          <span class="email">
-            douglax2005@gmail.com
-          </span>
+    <div class="contact1">
+      <form id="formulario">
+        <h3>Entre Em Contato</h3>
+        <input type="text" placeholder="Nome " id="nome" required>
+        <input type="email" placeholder="E-mail" class="box" id="email" required>
+        <input type="text" placeholder="Título" class="box" id="titulo" required>
+        <textarea id="texto" placeholder="Mensagem" cols="2" rows="2" required></textarea>
+        <input type="submit" value="Enviar" class="btn" id="botao1">
+      </form>
+      <div class="media-name">
+        <div class="div-1">
+          <div class="p-1">
+            <span>
+              <img src="image/logo-header.png">
+              <p class="name">Douglas</p>
+            </span>
+          </div>
+          <div class="p-2">
+            <p>Desenvolvedor front-end</p>
+          </div>
         </div>
-        <div class="p-2">
-          <p>Desenvolvedor front-end</p>
-        </div>
-      </div>
-      <div class="div-2">
-        <div class="midia">
-          <p>Mídias Sociais</p>
-          <span>
+        <div class="social-media">
+          <h4>Mídias Sociais</h4>
+          <div class="icons">
             <a href="https://github.com/loraxexe" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             <a href="https://instagram.com/dgls.exe" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="https://twitter.com/lorax_exe" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-          </span>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="copy">
-      <p>&copy; Copyright 2023. Douglas Cabral</p>
-    </div>
-
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
