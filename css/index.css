@@ -464,14 +464,14 @@ header ion-icon {
 .about-me .about-text {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
     gap: 30px;
     margin-top: 50px
 }
 
 .about-me .about-text {
     text-align: left;
-    font-weight: 400;
+    font-weight: 100%;
     line-height: 26px;
 }
 
@@ -486,7 +486,7 @@ header ion-icon {
 .facts {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 100%;
     height: 100%;
     gap: 20px;
     align-items: flex-start;
@@ -498,6 +498,7 @@ header ion-icon {
     padding: 5px;
     font-size: 14px;
     background: var(--background);
+    text-align: center;
 }
 
 .about-me .facts span {
@@ -506,7 +507,7 @@ header ion-icon {
 }
 
 .img-about {
-    position: relative;
+    display: none;
 }
 
 .img-about .dot-1 {
