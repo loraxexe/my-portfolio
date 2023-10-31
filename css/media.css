@@ -322,7 +322,7 @@
     }
 
     .quote .q-center .frase {
-        padding: 15px;
+        padding: 15px 0 15px 0;
      }
 
      footer form#formulario {
@@ -358,9 +358,14 @@
         margin: 0 ;
     }
 
+    .p-left h1 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
     .p-right .profileimage {
-        width: 250px;
-        height: 190px;
+        width: 200px;
+        height: 200px;
     }
 
     .p-right .square {
